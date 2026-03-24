@@ -23,7 +23,7 @@
     }
   ],
   "functions": {
-    "api/ai.js": {
+    "api/ai": {
       "maxDuration": 30
     }
   }
