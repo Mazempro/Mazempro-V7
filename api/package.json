@@ -8,10 +8,6 @@
     "deploy": "vercel --prod"
   },
   "engines": {
-    "node": ">=18.x"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "vercel": "latest"
+    "node": "22.x"
   }
 }
