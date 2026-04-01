@@ -1,57 +1,18 @@
 {
   "version": 2,
-  "functions": {
-    "api/ai.js": {
-      "runtime": "@vercel/node@3",
-      "maxDuration": 30
-    },
-    "api/football.js": {
-      "runtime": "@vercel/node@3",
-      "maxDuration": 15
-    }
-  },
   "routes": [
-    {
-      "src": "/api/ai",
-      "dest": "/api/ai.js"
-    },
-    {
-      "src": "/api/football",
-      "dest": "/api/football.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/api/ai", "dest": "/api/ai.js" },
+    { "src": "/api/football", "dest": "/api/football.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
   "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
-        {
-          "key": "Access-Control-Allow-Credentials",
-          "value": "true"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET,OPTIONS,POST,PUT,PATCH,DELETE"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,POST,PUT,PATCH,DELETE" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type,Accept" },
+        { "key": "Cache-Control", "value": "no-store" }
       ]
     }
   ]
