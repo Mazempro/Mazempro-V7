@@ -1,0 +1,21 @@
+{
+  "name": "MAzemPro V7 ULTIMATE",
+  "short_name": "MAzemPro",
+  "description": "Analyste Soccer Pro · Claude + OpenAI · 16 pages · Bankroll · Dashboard Live",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03030A",
+  "theme_color": "#F5C842",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "categories": ["sports", "utilities"],
+  "shortcuts": [
+    {"name": "Analyse Express", "url": "/?page=analyse", "icons": [{"src":"icon-192.png","sizes":"192x192"}]},
+    {"name": "Dashboard Live", "url": "/?page=dashboard", "icons": [{"src":"icon-192.png","sizes":"192x192"}]},
+    {"name": "Bankroll", "url": "/?page=bankroll", "icons": [{"src":"icon-192.png","sizes":"192x192"}]}
+  ]
+}
